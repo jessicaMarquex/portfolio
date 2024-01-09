@@ -1,22 +1,21 @@
-import { Title, Text, Anchor } from '@mantine/core';
+import { Title, Text, Anchor, rem } from '@mantine/core';
 import classes from './Welcome.module.css';
 
 export function Welcome() {
   return (
     <>
-      <Title className={classes.title} ta="center" mt={100}>
-        Welcome to{' '}
+      <Title className={classes.title} ta="center" mt={45} mx={rem('16px')}>
+        Salut, meu nome é {' '}
         <Text inherit variant="gradient" component="span" gradient={{ from: 'pink', to: 'yellow' }}>
-          Mantine
+          Jessica Marques
         </Text>
       </Title>
       <Text c="dimmed" ta="center" size="lg" maw={580} mx="auto" mt="xl">
-        This starter Vite project includes a minimal setup, if you want to learn more on Mantine +
-        Vite integration follow{' '}
-        <Anchor href="https://mantine.dev/guides/vite/" size="lg">
-          this guide
+        Estou ainda desenvolvendo este portfólio mas por enquanto pode dar uma olhada no meu
+        <Anchor href="https://github.com/jessicaMarquess" size="lg" target="_blank" rel="noopener noreferrer">
+          {' '}github pessoal
         </Anchor>
-        . To get started edit pages/Home.page.tsx file.
+        . Espero que tenha uma experiência agradável 🖤.
       </Text>
     </>
   );
